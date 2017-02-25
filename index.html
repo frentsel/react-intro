@@ -72,7 +72,7 @@
 				<li class="fragment">EcmaScript 6 *</li>
 				<li class="fragment">JSX *</li>
 				<li class="fragment">FLUX - REDUX *</li>
-				<li class="fragment">Webpack | Gulp | ... *</li>
+				<li class="fragment">Webpack *</li>
 			</ol>
 		</section>
 
@@ -105,16 +105,24 @@
 	document.querySelector('#main')
 );</code></pre>
 			</section>
-
-			<section id="thatsall">
-				<h1>Это все!</h1>
-				<p>Теперь вы знаете о возможностях react почти все!</p>
+			<section id="thatsall" data-background="./img/what.gif">
+				<h1 class="blue">Это все!</h1>
+				<p>Теперь вы знаете о базовых возможностях react все!</p>
+				<p class="fragment blue">...ну почти все :)</p>
 			</section>
 		</section>
 
-		<section>
+		<section data-background="./img/bad.jpg">
+			<h3>Предварительные выводы:</h3>
+			<ul>
+				<li class="fragment">Неудобная и неэффективная работа с данными;</li>
+				<li class="fragment">React из коробки бесполезен;</li>
+			</ul>
+		</section>
+
+		<section data-background="http://www.desktop-screens.com/data/out/39/2826893-explosion-wallpapers.jpg">
 			<section id="flux-redux">
-				<h2>FLUX</h2>
+				<h2>FLUX!</h2>
 				<small class="fragment">
 					FLUX - это система по управлению состоянием.
 				</small>
@@ -130,64 +138,22 @@
 					<img src="./img/redux-diagram.svg" alt="">
 				</div>
 			</section>
-			<section>
-				<b>REDUX DEMO APP</b>
-				<!--<iframe src="http://codepen.io/Shulz/pen/jBNezO" width="980" height="640" frameborder="0"></iframe>-->
-			</section>
-<!--			<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm"
-					data-background-color="#000000">
-				<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-					<h2>Video Backgrounds</h2>
-					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-				</div>
-			</section>-->
-			<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-				<h2>... and GIFs!</h2>
-			</section>
 		</section>
 
-		<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-			<h2>Background Transitions</h2>
-			<p>
-				Different background transitions are available via the backgroundTransition option. This one's called
-				"zoom".
-			</p>
-			<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+		<section data-background="http://www.pixelstalk.net/wp-content/uploads/2016/03/Hd-superman-free-wallpaper.jpg">
+			<h1>React + FLUX</h1>
 		</section>
 
-		<section>
-			<section id="demo">
-				<b>Demo SPA</b>
-				<iframe src="https://frentsel.github.io/reactShop/react/#/" width="980" height="640" frameborder="0"></iframe>
-			</section>
-			<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-				<h2>Image Backgrounds</h2>
-				<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
-			</section>
-			<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png"
-					 data-background-repeat="repeat" data-background-size="100px">
-				<h2>Tiled Backgrounds</h2>
-				<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-			</section>
-			<section
-					data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm"
-					data-background-color="#000000">
-				<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-					<h2>Video Backgrounds</h2>
-					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-				</div>
-			</section>
-			<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-				<h2>... and GIFs!</h2>
-			</section>
+		<section id="demo">
+			<b>Demo SPA</b>
+			<iframe src="https://frentsel.github.io/reactShop/react/#/" width="980" height="640" frameborder="0"></iframe>
 		</section>
 
 		<section id="minus">
 			<h2>Недостатки:</h2>
 			<ol>
-				<li class="fragment">Высокий порог вхождения;</li>
-				<li class="fragment">Необходимо освоить дополнительно кучу всего;</li>
-				<li class="fragment">На первом этапе кода придется писать больше;</li>
+				<li class="fragment">Мешанина логики и представления (JSX);</li>
+				<li class="fragment"></li>
 			</ol>
 		</section>
 
@@ -197,7 +163,7 @@
 				<li class="fragment">Простой API;</li>
 				<li class="fragment">Компонентный подход;</li>
 				<li class="fragment">Изоморфный код (клиент/сервер);</li>
-				<li class="fragment">Виртуальный DOM;</li>
+				<li class="fragment">Виртуальный DOM (производительность);</li>
 				<li class="fragment">Понятно что отображает конкретный компонент;</li>
 				<li class="fragment">Можно внедрить в существующее приложение без переписывания (причем постепенно).</li>
 			</ol>
@@ -211,21 +177,6 @@
 				<li class="fragment">Стоит изучить ради FLUX - REDUX.</li>
 				<li class="fragment">Компонентный подход - это не будущее, а настоящее.</li>
 			</ol>
-		</section>
-
-		<section>
-			<h2>Clever Quotes</h2>
-			<p>
-				These guys come in two forms, inline: <q
-					cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-				&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-			</p>
-			<blockquote
-					cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-				&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of
-				typewriters would
-				reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-			</blockquote>
 		</section>
 
 		<section id="finish" style="text-align: left;">

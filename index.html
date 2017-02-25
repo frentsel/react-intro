@@ -44,9 +44,7 @@
 			<br>
 			<small>Да зачем он мне нужен?..
 				<br>
-				<br>
-				...время...
-				<br>
+				...
 				<br>
 				...как я без него раньше жил?</small>
 			<br>
@@ -78,14 +76,40 @@
 			</ol>
 		</section>
 
-		<section id="code" data-transition="slide" data-background="#2f4f4f" data-background-transition="zoom">
-			<b>Сразу к делу</b>
-			<!--<iframe src="http://codepen.io/Shulz/pen/jBNezO" width="980" height="640" frameborder="0"></iframe>-->
+		<section>
+			<section id="code" data-background="#222">
+				<small>JSX. Немного по-лайвкодим...</small>
+				<iframe src="http://codepen.io/Shulz/pen/NpPwZr" width="980" height="640" frameborder="0"></iframe>
+			</section>
+			<section id="props" data-background="#222">
+				<small>Props</small>
+				<iframe src="http://codepen.io/Shulz/pen/bqNamo" width="980" height="640" frameborder="0"></iframe>
+			</section>
+			<section id="state" data-background="#222">
+				<small>State</small>
+				<iframe src="http://codepen.io/Shulz/pen/dvPJJb" width="980" height="640" frameborder="0"></iframe>
+			</section>
+			<section id="lifecycle" data-background="#222">
+				<small>Lifecycle - жизненный цикл компонента</small>
+				<iframe src="http://codepen.io/Shulz/pen/jBNezO" width="980" height="640" frameborder="0"></iframe>
+			</section>
+			<section id="router">
+				<small>Router</small>
+				<pre><code class="hljs" style="word-wrap: break-word;">ReactDOM.render(
+	<Router history={history}>
+		<Route path="/" component={Home}></Route>
+		<Route path="/contact" component={Contact}></Route>
+		<Route path="/product/:productId" component={Product}></Route>
+		<Route path="*" component={NotFound}></Route>
+	</Router>,
+	document.querySelector('#main')
+);</code></pre>
+			</section>
 		</section>
 
 		<section>
 			<section id="flux-redux">
-				<h2>FLUX - REDUX</h2>
+				<h2>FLUX</h2>
 				<small class="fragment">
 					FLUX - это система по управлению состоянием.
 				</small>
@@ -102,7 +126,7 @@
 				</div>
 			</section>
 			<section>
-				<h2>REDUX DEMO APP</h2>
+				<b>REDUX DEMO APP</b>
 				<!--<iframe src="http://codepen.io/Shulz/pen/jBNezO" width="980" height="640" frameborder="0"></iframe>-->
 			</section>
 <!--			<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm"
@@ -128,15 +152,8 @@
 
 		<section>
 			<section id="demo">
-				<h2>Demo SPA</h2>
-				<p>
-					Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color
-					formats are supported.
-				</p>
-				<a href="#" class="navigate-down">
-					<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png"
-						 alt="Down arrow">
-				</a>
+				<b>Demo SPA</b>
+				<iframe src="https://frentsel.github.io/reactShop/react/#/" width="980" height="640" frameborder="0"></iframe>
 			</section>
 			<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
 				<h2>Image Backgrounds</h2>

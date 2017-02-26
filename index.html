@@ -42,32 +42,32 @@
 		<section id="start">
 			<h1><img src="./img/logo.png" id="logo"/><span class="blue">ReactJS</span></h1>
 			<br>
-			<small>Да зачем он мне нужен?..
+			<p>Да зачем он мне нужен?..
 				<br>
 				...
 				<br>
-				...как я без него раньше жил?</small>
+				...как я без него раньше жил?</p>
 			<br>
 			<br>
 			<br>
 			<hr>
-			<small>CodeIT, Alex Frentsel, &copy; 2017</small>
+			<p>CodeIT, Alex Frentsel, &copy; 2017</p>
 		</section>
 
 		<section id="not">
-			<h2 class="blue">React - это не...</h2>
-			<small>
+			<h1 class="blue">React - это не...</h1>
+			<p>
 				<span class="fragment">React - не фреймворк, </span>
 				<span class="fragment">это библиотека.</span>
-			</small>
-			<small>
+			</p>
+			<p>
 				<span class="fragment">React - не MVC.</span>
 				<span class="fragment">Это только V (представление).</span>
-			</small>
+			</p>
 		</section>
 
 		<section id="options">
-			<h2 class="blue">Что нужно для старта?</h2>
+			<h1 class="blue">Что нужно для старта?</h1>
 			<ol>
 				<li class="fragment">EcmaScript 6 *</li>
 				<li class="fragment">JSX *</li>
@@ -78,23 +78,23 @@
 
 		<section>
 			<section id="code" data-background="#222">
-				<small>JSX. Немного по-лайвкодим...</small>
+				<p>JSX. Немного по-лайвкодим...</p>
 				<iframe src="https://codepen.io/Shulz/pen/NpPwZr" width="980" height="640" frameborder="0"></iframe>
 			</section>
 			<section id="props" data-background="#222">
-				<small>Props</small>
+				<p>Props</p>
 				<iframe src="https://codepen.io/Shulz/pen/bqNamo" width="980" height="640" frameborder="0"></iframe>
 			</section>
 			<section id="state" data-background="#222">
-				<small>State</small>
+				<p>State</p>
 				<iframe src="https://codepen.io/Shulz/pen/dvPJJb" width="980" height="640" frameborder="0"></iframe>
 			</section>
 			<section id="lifecycle" data-background="#222">
-				<small>Lifecycle - жизненный цикл компонента</small>
+				<p>Lifecycle - жизненный цикл компонента</p>
 				<iframe src="https://codepen.io/Shulz/pen/jBNezO" width="980" height="640" frameborder="0"></iframe>
 			</section>
 			<section id="router">
-				<small>Router</small>
+				<p>Router</p>
 				<pre><code class="hljs" style="word-wrap: break-word;">ReactDOM.render(
 	<Router history={history}>
 		<Route path="/" component={Home}></Route>
@@ -112,78 +112,95 @@
 			</section>
 		</section>
 
-		<section data-background="./img/bad.jpg">
-			<h3>Предварительные выводы:</h3>
+		<section id="pre-conclusions" data-background="./img/sad.jpg">
+			<h1>Первое впечатление от React:</h1>
 			<ul>
+				<li class="fragment">Весит почти как angular, а умеет на порядок меньше;</li>
+				<li class="fragment">К JSX еще нужно привыкнуть, а без него код выглядит просто отвратно;</li>
 				<li class="fragment">Неудобная и неэффективная работа с данными;</li>
-				<li class="fragment">React из коробки бесполезен;</li>
+				<li class="fragment">React из коробки просто бесполезен;</li>
 			</ul>
 		</section>
 
 		<section data-background="http://www.desktop-screens.com/data/out/39/2826893-explosion-wallpapers.jpg">
-			<section id="flux-redux">
-				<h2>FLUX!</h2>
-				<small class="fragment">
-					FLUX - это система по управлению состоянием.
-				</small>
+			<section id="flux">
+				<h1>Но тут появился FLUX!</h1>
+				<p class="fragment">
+					FLUX - это система по управлению состоянием.<br>
+					Mix паттерна Observer и Store.
+				</p>
 				<div class="fragment">
 					<img src="./img/flux-diagram.png" alt="">
-					<small>Принцип однонаправленного потока данных.</small>
+					<p>Принцип однонаправленного потока данных.</p>
 				</div>
 			</section>
-			<section>
-				<h3>REDUX</h3>
-				<small>Это одна из реализаций паттерна FLUX</small>
+			<section id="redux">
+				<h1>REDUX</h1>
+				<p>Это одна из реализаций паттерна FLUX</p>
 				<div class="fragment">
 					<img src="./img/redux-diagram.svg" alt="">
 				</div>
 			</section>
+			<section id="redux-demo">
+				<h1>REDUX Demo</h1>
+				<ul>
+					<li>
+						<a href="https://frentsel.github.io/redux-todo-test/index.html" target="_blank">Redux ToDo list</a>
+					</li>
+					<li>
+						<a href="https://frentsel.github.io/tinyRedux/index.html" target="_blank">tinyRedux ToDo list</a>
+					</li>
+				</ul>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+			</section>
 		</section>
 
-		<section data-background="http://www.pixelstalk.net/wp-content/uploads/2016/03/Hd-superman-free-wallpaper.jpg">
+		<section data-background="./img/superman.jpg" data-transition="zoom">
 			<h1>React + FLUX</h1>
+			<p>Это и есть тот самый React, который сегодня известен как лучший javascript-фреймворк.</p>
 		</section>
 
 		<section id="demo">
-			<b>Demo SPA</b>
-			<iframe src="https://frentsel.github.io/reactShop/react/#/" width="980" height="640" frameborder="0"></iframe>
+			<h1>Demo</h1>
+			<a href="https://frentsel.github.io/reactShop/react/#/" target="_blank">SPA - store</a>
 		</section>
 
 		<section id="minus">
 			<h2>Недостатки:</h2>
 			<ol>
-				<li class="fragment">Мешанина логики и представления (JSX);</li>
-				<li class="fragment"></li>
+				<li class="fragment">Специфичность JSX;</li>
+				<li class="fragment">Скудный базовый API;</li>
+				<li class="fragment">Если не знаком с ES5, JSX, FLUX, Webpack, то все это, рано или поздно, придется осваивать;</li>
+				<li class="fragment">Для приложений с малым кол-вом динамики избыточен;</li>
 			</ol>
 		</section>
 
 		<section id="plus">
 			<h2>Преимущества:</h2>
 			<ol>
-				<li class="fragment">Простой API;</li>
-				<li class="fragment">Компонентный подход;</li>
+				<li class="fragment">Простой в освоении;</li>
 				<li class="fragment">Изоморфный код (клиент/сервер);</li>
 				<li class="fragment">Виртуальный DOM (производительность);</li>
 				<li class="fragment">Понятно что отображает конкретный компонент;</li>
 				<li class="fragment">Можно внедрить в существующее приложение без переписывания (причем постепенно).</li>
-			</ol>
-		</section>
-
-		<section id="conclusions">
-			<h2>Мои выводы:</h2>
-			<ol>
-				<li class="fragment">Для статических приложений избыточен;</li>
 				<li class="fragment">Формирует полезные привычки в проектировании;</li>
-				<li class="fragment">Стоит изучить ради FLUX - REDUX.</li>
-				<li class="fragment">Компонентный подход - это не будущее, а настоящее.</li>
+				<li class="fragment">Перспектива легкого перехода к мобильной разработке;</li>
+				<li class="fragment">Компонентный подход - это уже не будущее, а настоящее;</li>
 			</ol>
 		</section>
 
-		<section id="finish" style="text-align: left;">
+		<section id="finish" data-transition="zoom">
 			<h1 class="blue">THE END</h1>
-			<p>Не проходите мимо!</p>
-			<p>REACT - это клевая тема!</p>
-			<img src="./img/react-love.png" alt="react love">
+			<p>Думайте сами... Решайте сами...</p>
 		</section>
 
 	</div>
@@ -241,9 +258,9 @@
 
 			Particles.init({
 				selector: '#myCanvas',
-				color: '#ffffff',
+				color: '#fff',
 				connectParticles: true,
-				minDistance: 140
+				minDistance: 200
 			});
 
 			return true;

@@ -40,18 +40,14 @@
 	<div class="slides">
 
 		<section id="start">
-			<h1><img src="./img/logo.png" id="logo"/><span class="blue">ReactJS</span></h1>
-			<br>
-			<p>Да зачем он мне нужен?..
-				<br>
-				...
-				<br>
-				...как я без него раньше жил?</p>
-			<br>
-			<br>
-			<br>
+			<h1><img src="./img/logo.png" class="logo animation"/><span class="blue">ReactJS</span></h1>
+			<blockquote>
+				Если бы McDonalds была бы софтверной компанией, то у них один из ста Биг Маков был бы отравленным, и их
+				ответ на это был бы: «Мы сожалеем, вот вам купон на ещё два Биг Мака."
+			</blockquote>
+			<p>(Mark Minasi)</p>
 			<hr>
-			<p>CodeIT, Shulz, &copy; 2017</p>
+			<small class="blue">CodeIT, Alex Frentsel, &copy; 2017</small>
 		</section>
 
 		<section id="not">
@@ -149,10 +145,12 @@
 				<h1>REDUX Demo</h1>
 				<ul>
 					<li>
-						<a href="https://frentsel.github.io/redux-todo-test/index.html" target="_blank">Redux ToDo list</a>
+						<a href="https://frentsel.github.io/redux-todo-test/index.html" target="_blank">Redux ToDo
+							list</a>
 					</li>
 					<li>
-						<a href="https://frentsel.github.io/tinyRedux/index.html" target="_blank">tinyRedux ToDo list</a>
+						<a href="https://frentsel.github.io/tinyRedux/index.html" target="_blank">tinyRedux ToDo
+							list</a>
 					</li>
 				</ul>
 				<br>
@@ -184,7 +182,9 @@
 			<ol>
 				<li class="fragment">Специфичность JSX;</li>
 				<li class="fragment">Скудный базовый API;</li>
-				<li class="fragment">Если не знаком с ES6, JSX, FLUX, Webpack, то все это, рано или поздно, придется осваивать;</li>
+				<li class="fragment">Если не знаком с ES6, JSX, FLUX, Webpack, то все это, рано или поздно, придется
+					осваивать;
+				</li>
 				<li class="fragment">Плохая доккументация;</li>
 				<li class="fragment">Для приложений с малым кол-вом динамики избыточен;</li>
 			</ol>
@@ -197,7 +197,8 @@
 				<li class="fragment">Изоморфный код (клиент/сервер);</li>
 				<li class="fragment">Виртуальный DOM (производительность);</li>
 				<li class="fragment">Понятно что отображает конкретный компонент;</li>
-				<li class="fragment">Можно внедрить в существующее приложение без переписывания (причем постепенно).</li>
+				<li class="fragment">Можно внедрить в существующее приложение без переписывания (причем постепенно).
+				</li>
 				<li class="fragment">Формирует полезные привычки в проектировании;</li>
 				<li class="fragment">Перспектива легкого перехода к мобильной разработке;</li>
 				<li class="fragment">Компонентный подход - это уже не будущее, а настоящее;</li>
@@ -205,8 +206,15 @@
 		</section>
 
 		<section id="finish" data-transition="zoom">
-			<h1 class="blue">THE END</h1>
-			<p>Думайте сами... Решайте сами...</p>
+			<h1 class="blue"><img src="./img/logo.png" class="logo"/>THE END</h1>
+			<blockquote>
+				Опасайтесь багов в приведенном выше коде;<br>
+				я только доказал корректность,<br>
+				но не запускал его.
+			</blockquote>
+			<p>(Donald E. Knuth)</p>
+			<hr>
+			<small class="blue">CodeIT, Alex Frentsel, &copy; 2017</small>
 		</section>
 
 	</div>
@@ -260,7 +268,7 @@
 
 	window.onhashchange = function (e) {
 
-		if(window.location.hash === '#/finish') {
+		if (window.location.hash === '#/finish') {
 
 			Particles.init({
 				selector: '#myCanvas',

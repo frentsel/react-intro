@@ -38,7 +38,7 @@
 			</blockquote>
 			<p>(Christopher Thompson)</p>
 			<hr>
-			<small class="blue">CodeIT, Alex Frentsel, &copy; 2017</small>
+			<small>CodeIT <a href="https://github.com/frentsel/" target="_blank">Alex Frentsel</a> &copy; 2017</small>
 		</section>
 
 		<section id="not">
@@ -200,7 +200,7 @@
 			</blockquote>
 			<p>(Donald E. Knuth)</p>
 			<hr>
-			<small class="blue">CodeIT, Alex Frentsel, &copy; 2017</small>
+			<small>CodeIT <a href="https://github.com/frentsel/" target="_blank">Alex Frentsel</a> &copy; 2017</small>
 		</section>
 
 	</div>
@@ -252,18 +252,22 @@
 		]
 	});
 
-	window.onhashchange = function (e) {
+	var particlesInit = function () {
+
+		Particles.init({
+			selector: '#myCanvas',
+			color: '#ffffff',
+			connectParticles: true,
+			minDistance: 120
+		});
+
+		particlesInit = function () {};
+	};
+
+	window.onhashchange = function () {
 
 		if (window.location.hash === '#/finish') {
-
-			Particles.init({
-				selector: '#myCanvas',
-				color: '#ffffff',
-				connectParticles: true,
-				minDistance: 120
-			});
-
-			return true;
+			particlesInit();
 		}
 	};
 
